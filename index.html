@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 	<div class="container">
 		<div class="jumbotron" style="background-color: #20315A; color: white;">
 			<div class="info-icons">
@@ -35,14 +36,48 @@
 		<input type="text" name="retrieve"><br>
 		<input type="text" name="start-year"><br>
 		<input type="text" name="end-year"><br>
+=======
+	<div class="jumbotron"></div>
+	<div class="row"></div>
+	
+	<div><span class="glyphicon glyphicon-list-alt"></span>Search Parameters</div>
 
-		<div id="search" class="btn"></div>
-		<div id="clear" class="btn"></div>
+	<form class="form">
+		
+		<p>Search Term:</p>
+		<input type="text" name="search">
+>>>>>>> efdba1ec93ecfcd5ec961af27efb91c3a412b78a
+
+		<br><br>
+		
+		<p>Number of Records to Retrieve:</p>
+		<select>
+			<option>1</option>
+			<option>5</option>
+			<option>10</option>
+		</select>
+
+		<br><br>
+		
+		<p>Start Year (Optional):</p>		
+		<input type="text" name="start-year">
+		
+		<br><br>
+
+		<p>End Year (Optional):</p>	
+		<input type="text" name="end-year">
+
+		<br><br>
+
+		<div id="search" class="btn btn-primary" name="search"><span class="glyphicon glyphicon-search"></span>Search</div>
+		<div id="clear" class="btn btn-primary" name="clear"><span class="glyphicon glyphicon-trash"></span>Clear Results</div>
 		
 	</form>
-		
+	
+	<div class="top-articles">
+		<div><span class="glyphicon glyphicon-list-alt"></span>Top Articles</div>
 		<div id="article_output"></div>
-
+	</div>
 
 </body>
 </html>
